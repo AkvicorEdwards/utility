@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Unix Timestamp</title>
+    <style>
+        a {
+            TEXT-DECORATION: none
+        }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<style>
+    #content {
+        width: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 2%;
+    }
+    .arrow {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+    }
+
+    .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+
+    .left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+    }
+
+    .up {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+    }
+
+    .down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
+
+    .rectangle {
+        height: 30px;
+        width: 70px;
+        border:1px solid #004993;
+        background-color: #ffffff;
+    }
+
+    .rectangle_long {
+        height: 30px;
+        width: 170px;
+        border:1px solid #808080;
+        background-color: #ffffff;
+    }
+    .triangle-left {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-right: 20px solid #555;
+        border-bottom: 10px solid transparent;
+    }
+    .triangle-right {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-left: 20px solid #555;
+        border-bottom: 10px solid transparent;
+    }
+    .triangle-up {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 20px solid #555;
+    }
+    .triangle-down {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 20px solid #555;
+    }
+</style>
+<script>
+    let mode = 1
+
+    function unix_to_date() {
+        let unix = document.getElementById("unix").value;
+        unix = parseInt(unix)
+        if (mode === 1) {
+            unix = unix * 1000;
+        }
+        let date = new Date(unix);
+
+        let Y = date.getFullYear() + '-';
+        let M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '-';
+        let D = date.getDate() + ' ';
+        let h = date.getHours() + ':';
+        let m = date.getMinutes() + ':';
+        let s = date.getSeconds();
+
+        document.getElementById("date").value = Y+M+D+h+m+s
+    }
+    function date_to_unix() {
+        let date = document.getElementById("date").value
+        let unix = new Date(date)
+        if (mode === 1) {
+            document.getElementById("unix").value = parseInt((unix.getTime()/1000).toString())
+        } else {
+            document.getElementById("unix").value = parseInt((unix.getTime()).toString())
+        }
+    }
+    function refresh() {
+        let cur = new Date()
+        let cur_unix = cur.getTime()
+        if(mode === 1) {
+            cur_unix = cur_unix / 1000;
+        }
+        document.getElementById("unix").value = parseInt((cur_unix).toString());
+        document.getElementById("date").value = cur.getFullYear() + '-' +
+            (cur.getMonth()+1 < 10 ? '0'+(cur.getMonth()+1) : cur.getMonth()+1) + '-' +
+            cur.getDate() + ' ' + cur.getHours() + ':' + cur.getMinutes() + ':' + cur.getSeconds();
+    }
+    function change_mode1() {
+        if(mode === 1) {
+            mode = 2;
+            document.getElementById("change_mode").innerText = "ms"
+        } else {
+            mode = 1;
+            document.getElementById("change_mode").innerText = "s"
+        }
+        refresh();
+    }
+
+</script>
+<body id="content">
+<h1>Unix Timestamp</h1>
+<form action="">
+    <button type="button" onclick="change_mode1()" id="change_mode" class="rectangle">s</button>
+    <br /><br />
+    <table>
+        <tr>
+            <td><input type="text" name="unix" id="unix" class="rectangle_long"/><label for="unix"></label></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="date" id="date" class="rectangle_long"/><label for="date"></label></td>
+        </tr>
+    </table>
+    <br />
+    <button type="button" onclick="date_to_unix()" class="rectangle"><i class="arrow up"></i></button>
+    <button type="button" onclick="unix_to_date()" class="rectangle"><i class="arrow down"></i></button>
+
+</form>
+<script>
+    refresh()
+</script>
+</body>
+</html>

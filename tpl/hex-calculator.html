@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>十六进制加法 减法 乘法 除法</title>
+    <link type="text/css" rel="stylesheet" href="./css/mpublic_v2.css">
+    <link type="text/css" rel="stylesheet" href="./css/base.css">
+    <link type="text/css" rel="stylesheet" href="./css/number.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="main">
+        <div class="cont">
+            <div class="col_left">
+                <div class="fn_part fn_sfz mod_box_t1">
+                    <div class="hd">
+                        <h2>十六进制加法 减法 乘法 除法</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="mod_box_t3 fn_box">
+                            <div class="box_con">
+                                <div class="mathmod_form">
+                                    <form name="df">
+                                        <table>
+                                            <tbody><tr><td>十六进制A：</td><td><input id="a" type="text" onkeyup="checknum(this)"> </td></tr>
+                                            <tr><td>十六进制B：</td><td> <input id="a1" type="text" onkeyup="checknum(this)"> </td></tr>
+                                            <tr><td></td><td> <input type="button" value="计算" onclick="calc()" class="calc"><input type="reset" value="清除" onclick="re()" class="calc"></td></tr>
+                                            <tr><td>十六进制加法：</td><td> <input id="res" type="text" readonly=""> </td></tr>
+                                            <tr><td>十六进制减法：</td><td> <input id="result1" type="text" readonly=""> </td></tr>
+                                            <tr><td>十六进制乘法：</td><td> <input id="result3" type="text" readonly=""> </td></tr>
+                                            <tr><td>十六进制除法：</td><td> <input id="res3" type="text" readonly=""> </td></tr>
+                                            <tr><td>十进制的A:</td><td> <input id="dec1" type="text" readonly=""> </td></tr>
+                                            <tr><td>十进制的B:</td><td> <input id="dec2" type="text" readonly=""> </td></tr>
+                                            <tr><td>十进制加法：</td><td> <input id="result" type="text" readonly=""> </td></tr>
+                                            <tr><td>十进制减法：</td><td> <input id="result2" type="text" readonly=""> </td></tr>
+                                            <tr><td>十进制乘法：</td><td> <input id="result4" type="text" readonly=""> </td></tr>
+                                            <tr><td>十进制除法：</td><td> <input id="res4" type="text" readonly=""> </td></tr>
+                                            </tbody></table>
+                                    </form>
+                                </div>
+                            </div>
+                            <i class="flag_tl_t3"></i>
+                            <i class="flag_tr_t3"></i>
+                            <i class="flag_bl_t3"></i>
+                            <i class="flag_br_t3"></i>
+                        </div>
+                        <div class="intro_area">
+                            <p>十六进制的加减法:</p>
+                            <p>十六进制的加减法其实很简单。只要记住十六进制里的字母代表十进制的那个数就很简单了。记住A(10),B(11),C(12),D(13),E(14),F(15)。</p>
+                            <p>不过由于惯性思维，有时候经常犯吧字母代表的十进制数看多一位的错误，就比如吧A看成11，B看成12之类，所以一定要记住A是10，不是11，其他字母代表的数值也一样要注意。</p>
+                            <p>接下来说正式开始说十六进制加减法，十六进制加减法跟十进制加减法算法一样，只要记住几个要点就可以了，就拿 6AE9H+4B7CH来说，第一位数是数9+C(12)＝21，像这样得出的结果≥16的话就要吧这个结果减去16，然后前面的数进一位，所以结果是5，E(14)+7=21，前面进一位，所以结果是22，减去16是6，然后前面的数进一位，A(10)+B(11)=21前面进了一位所以结果是22，减去16是6，然后前面的数进一位6+4=A(10)，前面进了一位所以结果是B(11)，所以 6AE9H+4B7CH=A665H。</p>
+                            <p>十六进制数的减法也是同理，不过注意要数不够减时向前面的数借一位借来数值的不是10，而是16，比如说4-9不够减，向前面借一位，不是14-9，而是20-9。</p>
+                        </div>
+                    </div>
+                    <i class="flag_tl_t1"></i>
+                    <i class="flag_tr_t1"></i>
+                    <i class="flag_bl_t1"></i>
+                    <i class="flag_br_t1"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script language="JavaScript">
+    function checknum(as)
+    {
+        var r=as.value;
+        var dd=r.toUpperCase();
+        var s = "0123456789ABCDEF";
+        var s1;
+        for (i = 0; i < dd.length; i++)
+        {
+            s1 = dd.charAt(i);
+            if (s.indexOf(s1) == -1)
+            {
+                dd = dd.substring(0,(dd.length-1));
+                as.value = dd;
+            }
+        }
+
+    }
+    function calc()
+    {
+        var r=document.getElementById("a").value;
+        var r1=document.getElementById("a1").value;
+        var b1=parseInt(r,16);
+        var b2=parseInt(r1,16);
+        var r2=b1+b2;
+        var r3=b1-b2;
+        r4=b1*b2;
+        r5=b1/b2;
+        document.getElementById("dec1").value=b1;
+        document.getElementById("dec2").value=b2;
+        document.getElementById("res").value= r2.toString(16).toUpperCase();
+        document.getElementById("result").value= r2;
+        document.getElementById("result1").value= r3.toString(16).toUpperCase();
+        document.getElementById("result2").value= r3;
+        document.getElementById("result3").value= r4.toString(16).toUpperCase();
+        document.getElementById("result4").value= r4;
+        document.getElementById("res3").value= r5.toString(16).toUpperCase();
+        document.getElementById("res4").value= r5;
+
+    }
+    function re()
+    {
+        document.getElementById("a").value="";
+        document.getElementById("a1").value="";
+        document.getElementById("res").value="";
+        document.getElementById("result").value="";
+        document.getElementById("result1").value="";
+        document.getElementById("result2").value="";
+        document.getElementById("result3").value="";
+        document.getElementById("result4").value="";
+        document.getElementById("res3").value="";
+        document.getElementById("res4").value="";
+        document.getElementById("dec1").value="";
+        document.getElementById("dec2").value="";
+    }
+</script>
+</body>
+</html>

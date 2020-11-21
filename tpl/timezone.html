@@ -1,0 +1,1238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0041)http://www.99cankao.com/date/timezone.php -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>国际时区转换计算器</title>
+
+    <link type="text/css" rel="stylesheet" href="./css/mpublic_v2.css">
+    <link type="text/css" rel="stylesheet" href="./css/base.css">
+    <link type="text/css" rel="stylesheet" href="./css/number.css">
+
+
+<body style="">
+
+
+<div class="wrapper">
+
+    <div class="main">
+
+        <div class="cont">
+            <div class="col_left">
+                <div class="fn_part fn_sfz mod_box_t1">
+                    <div class="hd">
+                        <h2>国际时区转换在线计算器</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="mod_box_t3 fn_box">
+                            <div class="box_con">
+                                <div class="mathmod_form">
+                                    <script type="text/javascript">
+                                        var aLocation = new Array(
+                                            Array("-12:00", "International Date Line West", "日界线西"),
+                                            Array("-11:00", "Midway Island, Samoa", "中途岛, 萨摩亚群岛"),
+                                            Array("-10:00", "Hawaii", "夏威夷"),
+                                            Array("-09:00", "Alaska", "阿拉斯加州"),
+                                            Array("-08:00", "Pacific Time (US &amp; Canada), Tijuana", "太平洋时间 (美国 &amp;加拿大), 蒂华纳"),
+                                            Array("-07:00", "Mountain Time (US &amp; Canada)", "山地时间 (美国 &amp;加拿大)"),
+                                            Array("-07:00", "Arizona", "亚历桑那州"),
+                                            Array("-07:00", "Chihuahua, La Paz, Mazatlan", "奇瓦瓦, 拉巴斯, 马萨特兰"),
+                                            Array("-06:00", "Saskatchewan", "萨斯喀彻温"),
+                                            Array("-06:00", "Central Time (US &amp; Canada)", "中部时间 (美国 &amp;加拿大)"),
+                                            Array("-06:00", "Central America", "中美洲"),
+                                            Array("-06:00", "Guadalajara, Mexico, Monterrey", "瓜达拉哈拉, 墨西哥, 蒙特雷"),
+                                            Array("-05:00", "Bogota, Lima, Quito", "波哥大, 利马, 基多"),
+                                            Array("-05:00", "Eastern Time (US &amp; Canada)", "东部时间 (美国 &amp;加拿大)"),
+                                            Array("-05:00", "Indiana (East)", "印地安那州 (东部)"),
+                                            Array("-04:00", "Atlantic Time (Canada)", "大西洋时间 (加拿大)"),
+                                            Array("-04:00", "Caracas, La Paz", "加拉加斯, 拉巴斯"),
+                                            Array("-04:00", "Santiago", "圣地牙哥"),
+                                            Array("-03:30", "Newfoundland", "纽芬兰"),
+                                            Array("-03:00", "Brasilia", "巴西利亚"),
+                                            Array("-03:00", "Buenos Aires, Georgetown", "布宜诺斯艾利斯, 乔治敦"),
+                                            Array("-03:00", "Greenland", "格陵兰"),
+                                            Array("-02:00", "Mid-Atlantic", "中大西洋"),
+                                            Array("-01:00", "Cape Verde Is.", "佛得角群岛"),
+                                            Array("-01:00", "Azores", "亚速尔群岛"),
+                                            Array("+00:00", "Greenwich Mean Time: Dublin, Edinburgh, London, Lisbon", "格林威治标准时间: 都柏林, 爱丁堡, 伦敦, 里斯本"),
+                                            Array("+00:00", "Casablanca, Monrovia", "卡萨布兰卡, 蒙罗维亚"),
+                                            Array("+01:00", "Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna", "阿姆斯特丹, 柏林, 伯尔尼, 罗马, 斯德哥尔摩, 维也纳"),
+                                            Array("+01:00", "Belgrade, Bratislava, Budapest, Ljubljana, Prague", "贝尔格莱德, 布拉迪斯拉瓦, 布达佩斯, 卢布尔雅那, 布拉格"),
+                                            Array("+01:00", "Brussels, Copenhagen, Madrid, Paris", "布鲁塞尔, 哥本哈根, 马德里, 巴黎"),
+                                            Array("+01:00", "Sarajevo, Skopje, Warsaw, Zagreb", "萨拉热窝, 斯科普里, 华沙, 萨格勒布"),
+                                            Array("+01:00", "West Central Africa", "中非西部"),
+                                            Array("+02:00", "Bucharest", "布加勒斯特"),
+                                            Array("+02:00", "Harare, Pretoria", "哈拉雷, 比勒陀利亚"),
+                                            Array("+02:00", "Helsinki, Kyev, Riga, Sofia, Tallinn, Vilnius", "赫尔辛基，基辅，里加，索非亚，塔林，维尔纽斯"),
+                                            Array("+02:00", "Cairo", "开罗"),
+                                            Array("+02:00", "Athens, Beirut, Istanbul, Minsk", "雅典，贝鲁特，伊斯坦布尔，明斯克"),
+                                            Array("+02:00", "Jerusalem", "耶路撒冷"),
+                                            Array("+03:00", "Baghdad", "巴格达"),
+                                            Array("+03:00", "Kuwait, Riyadh", "科威特, 利雅得"),
+                                            Array("+03:00", "Moscow, St. Petersburg, Volgograd", "莫斯科, 圣彼得斯堡, 伏尔加格勒"),
+                                            Array("+03:00", "Nairobi", "内罗毕"),
+                                            Array("+03:30", "Tehran", "德黑兰"),
+                                            Array("+04:00", "Abu Dhabi, Muscat", "阿布扎比, 马斯喀特"),
+                                            Array("+04:00", "Baku, Tbilisi, Yerevan", "巴库, 第比利斯, 埃里温"),
+                                            Array("+04:30", "Kabul", "喀布尔"),
+                                            Array("+05:00", "Ekaterinburg", "叶卡捷琳堡"),
+                                            Array("+05:00", "Islamabad, Karachi, Tashkent", "伊斯兰堡, 卡拉奇, 塔什干"),
+                                            Array("+05:30", "Madras, Kolkata, Mumbai, Delhi", "马德拉斯，加尔各答，孟买，新德里"),
+                                            Array("+05:45", "Kathmandu", "加德满都"),
+                                            Array("+06:00", "Almaty, Novosibirsk", "阿拉木图, 新西伯利亚"),
+                                            Array("+06:00", "Astana, Dhaka", "阿斯塔那, 达卡"),
+                                            Array("+06:00", "Sri Jayawardenepura", "斯里哈亚华登尼普拉"),
+                                            Array("+06:30", "Rangoon", "仰光"),
+                                            Array("+07:00", "Krasnoyarsk", "克拉斯诺亚尔斯克"),
+                                            Array("+07:00", "Bangkok, Hanoi, Jakarta", "曼谷, 河内, 雅加达"),
+                                            Array("+08:00", "Beijing, Chongqing, Hong Kong, Urumqi", "北京, 重庆, 香港, 乌鲁木齐"),
+                                            Array("+08:00", "Kuala Lumpur, Singapore", "吉隆坡, 新加坡"),
+                                            Array("+08:00", "Perth", "珀斯"),
+                                            Array("+08:00", "Taipei", "台北"),
+                                            Array("+08:00", "Irkutsk, Ulaan Bataar", "伊尔库茨克, 乌兰巴托"),
+                                            Array("+09:00", "Osaka, Sapporo, Tokyo", "大阪, 扎幌, 东京"),
+                                            Array("+09:00", "Seoul", "汉城"),
+                                            Array("+09:00", "Yakutsk", "雅库茨克"),
+                                            Array("+09:30", "Adelaide", "阿德莱得"),
+                                            Array("+09:30", "Darwin", "达尔文"),
+                                            Array("+10:00", "Brisbane", "布里斯班"),
+                                            Array("+10:00", "Vladivostok", "符拉迪沃斯托克"),
+                                            Array("+10:00", "Guam, Port Moresby", "关岛, 莫尔兹比港口"),
+                                            Array("+10:00", "Hobart", "霍巴特"),
+                                            Array("+10:00", "Canberra, Melbourne, Sydney", "堪培拉, 墨尔本, 悉尼"),
+                                            Array("+11:00", "Magadan, Solomon Is., Caledonia", "马加丹, 所罗门群岛, 新喀里多尼亚"),
+                                            Array("+12:00", "Auckland, Wellington", "奥克兰, 惠灵顿"),
+                                            Array("+12:00", "Fiji, Kamchatka, Marshall Is.", "斐济, 勘察加半岛, 马绍尔群岛"),
+                                            Array("+13:00", "Nuku'alofa", "努库阿洛法")
+                                        );
+
+                                        var cStyle = "i";	// i=国际, g=英国, u=美国
+
+                                        var aMonthNameS = new Array("", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+                                        var aWeekDay = new Array("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat");
+
+                                        function toTimeString(dTime)
+                                        {
+                                            var year = dTime.getFullYear();
+                                            var mon = dTime.getMonth() + 1;
+                                            var day = dTime.getDate();
+                                            var hour = dTime.getHours();
+                                            var min = dTime.getMinutes();
+                                            var sec = dTime.getSeconds();
+
+                                            if(cStyle == "g")
+                                            {
+                                                var ampm = "am";
+                                                if(hour >= 12)
+                                                {
+                                                    ampm = "pm";
+                                                    hour = hour - 12;
+                                                }
+
+                                                if(min < 10)
+                                                    min = "0" + min;
+
+                                                if(sec < 10)
+                                                    sec = "0" + sec;
+
+                                                var wday = dTime.getDay();
+
+                                                return aWeekDay[wday] + ", " + day + " " + aMonthNameS[mon] + " " + year + " &nbsp;" + hour + ":" + min + ":" + sec + " " + ampm;
+                                            }
+                                            else if(cStyle == "u")
+                                            {
+                                                var ampm = "am";
+                                                if(hour >= 12)
+                                                {
+                                                    ampm = "pm";
+                                                    hour = hour - 12;
+                                                }
+
+                                                if(min < 10)
+                                                    min = "0" + min;
+
+                                                if(sec < 10)
+                                                    sec = "0" + sec;
+
+                                                var wday = dTime.getDay();
+
+                                                return aWeekDay[wday] + ", " + aMonthNameS[mon] + " " + day + ", " + year + " &nbsp;" + hour + ":" + min + ":" + sec + " " + ampm;
+                                            }
+                                            else
+                                            {
+                                                if(mon < 10)
+                                                    mon = "0" + mon;
+
+                                                if(day < 10)
+                                                    day = "0" + day;
+
+                                                if(hour < 10)
+                                                    hour = "0" + hour;
+
+                                                if(min < 10)
+                                                    min = "0" + min;
+
+                                                if(sec < 10)
+                                                    sec = "0" + sec;
+
+                                                return year + "-" + mon + "-" + day + " " + hour + ":" + min + ":" + sec;
+                                            }
+                                        }
+
+
+                                        // function to calculate local time
+                                        // in a different city
+                                        // given the city's UTC offset
+                                        function calcTimeZone(dTime, nTZOffset)
+                                        {
+                                            // create Date object for current location
+                                            d = new Date();
+
+                                            // 本地时间与UTC时差(毫秒)
+                                            tz = d.getTimezoneOffset() * 60000;
+
+                                            // 将指定本地时间转换成UTC时间(毫秒)
+                                            utc = dTime.getTime() + tz;
+
+                                            // 根据时区偏移(分钟), 计算该时区对应的时间
+                                            dNew = new Date(utc + nTZOffset * 60000);
+
+                                            return dNew;
+                                        }
+
+
+                                        function calcAll()
+                                        {
+                                            var year = document.getElementById("year_" + cStyle).value;
+                                            var mon = document.getElementById("month_" + cStyle).value - 1;
+                                            var day = document.getElementById("day_" + cStyle).value;
+                                            var h = document.getElementById("hour_" + cStyle).value;
+                                            var m = document.getElementById("min_" + cStyle).value;
+                                            var s = document.getElementById("sec_" + cStyle).value;
+                                            var d = new Date(year, mon, day, h, m, s);
+                                            if(isNaN(d))
+                                                return;
+
+                                            // 重设时间输入为校正后的时间
+                                            resetTime(d);
+
+                                            var re = /([+-]?)(\d+):(\d+)/;
+                                            var sOut = "<div style='margin: 5 5 5 5; color:#0000A0; font-weight:bold'>" + toTimeString(d) + "</div>";
+                                            document.getElementById("srctime").innerHTML = sOut;
+
+                                            // 计算时区
+                                            sOut = "<table border='0' width='100%' cellspacing='0' cellpadding='5' style='border: 1 solid #C7D4DC; '>";
+                                            for(i=0; i<aLocation.length; i++)
+                                            {
+                                                var aTZ = re.exec(aLocation[i][0]);
+                                                var tz = parseInt(aTZ[2], 10) * 60 + parseInt(aTZ[3], 10);
+                                                if(aTZ[1] == "-")
+                                                    tz *= -1;
+
+                                                var nd = calcTimeZone(d, tz);
+                                                sOut += "<tr><td width='100%' style='border-bottom:1 solid #e0e0e; color:#07519A'>(" + aLocation[i][0] + ") " + aLocation[i][2] + "</td><td nowrap style='border-bottom:1 solid #e0e0e' width='' align='right'>" + toTimeString(nd, 0) + "</td></tr>";
+                                            }
+
+                                            sOut += "</table>";
+
+                                            document.getElementById("list").innerHTML = sOut;
+                                        }
+
+                                        function resetTime(dTime)
+                                        {
+                                            document.getElementById("year_i").value = dTime.getFullYear();
+                                            document.getElementById("month_i").value = dTime.getMonth() + 1;
+                                            document.getElementById("day_i").value = dTime.getDate();
+                                            document.getElementById("hour_i").value = dTime.getHours();
+                                            document.getElementById("min_i").value = dTime.getMinutes();
+                                            document.getElementById("sec_i").value = dTime.getSeconds();
+
+                                            document.getElementById("year_g").value = dTime.getFullYear();
+                                            document.getElementById("month_g").value = dTime.getMonth() + 1;
+                                            document.getElementById("day_g").value = dTime.getDate();
+                                            document.getElementById("hour_g").value = dTime.getHours();
+                                            document.getElementById("min_g").value = dTime.getMinutes();
+                                            document.getElementById("sec_g").value = dTime.getSeconds();
+
+                                            document.getElementById("year_u").value = dTime.getFullYear();
+                                            document.getElementById("month_u").value = dTime.getMonth() + 1;
+                                            document.getElementById("day_u").value = dTime.getDate();
+                                            document.getElementById("hour_u").value = dTime.getHours();
+                                            document.getElementById("min_u").value = dTime.getMinutes();
+                                            document.getElementById("sec_u").value = dTime.getSeconds();
+                                        }
+
+                                        function calcNow()
+                                        {
+                                            var d = new Date();
+                                            resetTime(d);
+                                            calcAll();
+                                        }
+
+                                        function swapStyle(style)
+                                        {
+                                            // 同步所有输入面板
+                                            var year = document.getElementById("year_" + cStyle).value;
+                                            var mon = document.getElementById("month_" + cStyle).value - 1;
+                                            var day = document.getElementById("day_" + cStyle).value;
+                                            var h = document.getElementById("hour_" + cStyle).value;
+                                            var m = document.getElementById("min_" + cStyle).value;
+                                            var s = document.getElementById("sec_" + cStyle).value;
+                                            var d = new Date(year, mon, day, h, m, s);
+                                            if(isNaN(d))
+                                                return;
+
+                                            resetTime(d);	// 重设时间输入为校正后的时间
+
+                                            // 切换输入面板
+                                            if(style == 'g')
+                                            {
+                                                document.getElementById("tab_i").style.display = "none";
+                                                document.getElementById("tab_u").style.display = "none";
+                                                document.getElementById("tab_g").style.display = "";
+                                            }
+                                            else if(style == 'u')
+                                            {
+                                                document.getElementById("tab_i").style.display = "none";
+                                                document.getElementById("tab_g").style.display = "none";
+                                                document.getElementById("tab_u").style.display = "";
+                                            }
+                                            else
+                                            {
+                                                document.getElementById("tab_u").style.display = "none";
+                                                document.getElementById("tab_g").style.display = "none";
+                                                document.getElementById("tab_i").style.display = "";
+                                            }
+
+                                            // 重新计算
+                                            cStyle = style;
+                                            calcAll();
+                                        }
+
+                                    </script>
+
+                                    <div align="right" style="font-size: 8pt; line-height:normal; margin-bottom: 2">日期格式: <span class="cs" onclick="swapStyle(&#39;i&#39;)">国际</span> | <span class="cs" onclick="swapStyle(&#39;g&#39;)">英式</span> | <span class="cs" onclick="swapStyle(&#39;u&#39;)">美式</span></div>
+                                    <div>
+                                        <table id="tab_i">
+                                            <tbody><tr>
+                                                <td>年</td>
+                                                <td> </td>
+                                                <td>月</td>
+                                                <td> </td>
+                                                <td>日</td>
+                                                <td> </td>
+                                                <td>时</td>
+                                                <td> </td>
+                                                <td>分</td>
+                                                <td> </td>
+                                                <td>秒</td>
+                                                <td> </td>
+                                                <td> </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <select id="year_i">
+                                                        <option value="1970">1970</option>
+                                                        <option value="1971">1971</option>
+                                                        <option value="1972">1972</option>
+                                                        <option value="1973">1973</option>
+                                                        <option value="1974">1974</option>
+                                                        <option value="1975">1975</option>
+                                                        <option value="1976">1976</option>
+                                                        <option value="1977">1977</option>
+                                                        <option value="1978">1978</option>
+                                                        <option value="1979">1979</option>
+                                                        <option value="1980">1980</option>
+                                                        <option value="1981">1981</option>
+                                                        <option value="1982">1982</option>
+                                                        <option value="1983">1983</option>
+                                                        <option value="1984">1984</option>
+                                                        <option value="1985">1985</option>
+                                                        <option value="1986">1986</option>
+                                                        <option value="1987">1987</option>
+                                                        <option value="1988">1988</option>
+                                                        <option value="1989">1989</option>
+                                                        <option value="1990">1990</option>
+                                                        <option value="1991">1991</option>
+                                                        <option value="1992">1992</option>
+                                                        <option value="1993">1993</option>
+                                                        <option value="1994">1994</option>
+                                                        <option value="1995">1995</option>
+                                                        <option value="1996">1996</option>
+                                                        <option value="1997">1997</option>
+                                                        <option value="1998">1998</option>
+                                                        <option value="1999">1999</option>
+                                                        <option value="2000">2000</option>
+                                                        <option value="2001">2001</option>
+                                                        <option value="2002">2002</option>
+                                                        <option value="2003">2003</option>
+                                                        <option value="2004">2004</option>
+                                                        <option value="2005">2005</option>
+                                                        <option value="2006">2006</option>
+                                                        <option value="2007">2007</option>
+                                                        <option value="2008">2008</option>
+                                                        <option value="2009">2009</option>
+                                                        <option value="2010">2010</option>
+                                                        <option value="2011">2011</option>
+                                                        <option value="2012">2012</option>
+                                                        <option value="2013">2013</option>
+                                                        <option value="2014">2014</option>
+                                                        <option value="2015">2015</option>
+                                                        <option value="2016">2016</option>
+                                                        <option value="2017">2017</option>
+                                                        <option value="2018">2018</option>
+                                                        <option value="2019">2019</option>
+                                                        <option value="2020">2020</option>
+                                                        <option value="2021">2021</option>
+                                                        <option value="2022">2022</option>
+                                                        <option value="2023">2023</option>
+                                                        <option value="2024">2024</option>
+                                                        <option value="2025">2025</option>
+                                                        <option value="2026">2026</option>
+                                                        <option value="2027">2027</option>
+                                                        <option value="2028">2028</option>
+                                                        <option value="2029">2029</option>
+                                                        <option value="2030">2030</option>
+                                                    </select>
+                                                </td>
+                                                <td>-</td>
+                                                <td>
+                                                    <select id="month_i">
+                                                        <option value="1">01</option>
+                                                        <option value="2">02</option>
+                                                        <option value="3">03</option>
+                                                        <option value="4">04</option>
+                                                        <option value="5">05</option>
+                                                        <option value="6">06</option>
+                                                        <option value="7">07</option>
+                                                        <option value="8">08</option>
+                                                        <option value="9">09</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                    </select>
+                                                </td>
+                                                <td>-</td>
+                                                <td>
+                                                    <select id="day_i">
+                                                        <option value="1">01</option>
+                                                        <option value="2">02</option>
+                                                        <option value="3">03</option>
+                                                        <option value="4">04</option>
+                                                        <option value="5">05</option>
+                                                        <option value="6">06</option>
+                                                        <option value="7">07</option>
+                                                        <option value="8">08</option>
+                                                        <option value="9">09</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                        <option value="15">15</option>
+                                                        <option value="16">16</option>
+                                                        <option value="17">17</option>
+                                                        <option value="18">18</option>
+                                                        <option value="19">19</option>
+                                                        <option value="20">20</option>
+                                                        <option value="21">21</option>
+                                                        <option value="22">22</option>
+                                                        <option value="23">23</option>
+                                                        <option value="24">24</option>
+                                                        <option value="25">25</option>
+                                                        <option value="26">26</option>
+                                                        <option value="27">27</option>
+                                                        <option value="28">28</option>
+                                                        <option value="29">29</option>
+                                                        <option value="30">30</option>
+                                                        <option value="31">31</option>
+                                                    </select>
+                                                </td>
+                                                <td> &nbsp;&nbsp; </td>
+                                                <td>
+                                                    <select id="hour_i">
+                                                        <option value="0">00</option>
+                                                        <option value="1">01</option>
+                                                        <option value="2">02</option>
+                                                        <option value="3">03</option>
+                                                        <option value="4">04</option>
+                                                        <option value="5">05</option>
+                                                        <option value="6">06</option>
+                                                        <option value="7">07</option>
+                                                        <option value="8">08</option>
+                                                        <option value="9">09</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11
+                                                        </option><option value="12">12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                        <option value="15">15</option>
+                                                        <option value="16">16</option>
+                                                        <option value="17">17</option>
+                                                        <option value="18">18</option>
+                                                        <option value="19">19</option>
+                                                        <option value="20">20</option>
+                                                        <option value="21">21</option>
+                                                        <option value="22">22</option>
+                                                        <option value="23">23</option>
+                                                    </select>
+                                                </td>
+                                                <td>:</td>
+                                                <td>
+                                                    <select id="min_i">
+                                                        <option value="0">00</option>
+                                                        <option value="1">01</option>
+                                                        <option value="2">02</option>
+                                                        <option value="3">03</option>
+                                                        <option value="4">04</option>
+                                                        <option value="5">05</option>
+                                                        <option value="6">06</option>
+                                                        <option value="7">07</option>
+                                                        <option value="8">08</option>
+                                                        <option value="9">09</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                        <option value="15">15</option>
+                                                        <option value="16">16</option>
+                                                        <option value="17">17</option>
+                                                        <option value="18">18</option>
+                                                        <option value="19">19</option>
+                                                        <option value="20">20</option>
+                                                        <option value="21">21</option>
+                                                        <option value="22">22</option>
+                                                        <option value="23">23</option>
+                                                        <option value="24">24</option>
+                                                        <option value="25">25</option>
+                                                        <option value="26">26</option>
+                                                        <option value="27">27</option>
+                                                        <option value="28">28</option>
+                                                        <option value="29">29</option>
+                                                        <option value="30">30</option>
+                                                        <option value="31">31</option>
+                                                        <option value="32">32</option>
+                                                        <option value="33">33</option>
+                                                        <option value="34">34</option>
+                                                        <option value="35">35</option>
+                                                        <option value="36">36</option>
+                                                        <option value="37">37</option>
+                                                        <option value="38">38</option>
+                                                        <option value="39">39</option>
+                                                        <option value="40">40</option>
+                                                        <option value="41">41</option>
+                                                        <option value="42">42</option>
+                                                        <option value="43">43</option>
+                                                        <option value="44">44</option>
+                                                        <option value="45">45</option>
+                                                        <option value="46">46</option>
+                                                        <option value="47">47</option>
+                                                        <option value="48">48</option>
+                                                        <option value="49">49</option>
+                                                        <option value="50">50</option>
+                                                        <option value="51">51</option>
+                                                        <option value="52">52</option>
+                                                        <option value="53">53</option>
+                                                        <option value="54">54</option>
+                                                        <option value="55">55</option>
+                                                        <option value="56">56</option>
+                                                        <option value="57">57</option>
+                                                        <option value="58">58</option>
+                                                        <option value="59">59</option>
+                                                    </select>
+                                                </td>
+                                                <td>:</td>
+                                                <td>
+                                                    <select id="sec_i">
+                                                        <option value="0">00</option>
+                                                        <option value="1">01</option>
+                                                        <option value="2">02</option>
+                                                        <option value="3">03</option>
+                                                        <option value="4">04</option>
+                                                        <option value="5">05</option>
+                                                        <option value="6">06</option>
+                                                        <option value="7">07</option>
+                                                        <option value="8">08</option>
+                                                        <option value="9">09</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                        <option value="15">15</option>
+                                                        <option value="16">16</option>
+                                                        <option value="17">17</option>
+                                                        <option value="18">18</option>
+                                                        <option value="19">19</option>
+                                                        <option value="20">20</option>
+                                                        <option value="21">21</option>
+                                                        <option value="22">22</option>
+                                                        <option value="23">23</option>
+                                                        <option value="24">24</option>
+                                                        <option value="25">25</option>
+                                                        <option value="26">26</option>
+                                                        <option value="27">27</option>
+                                                        <option value="28">28</option>
+                                                        <option value="29">29</option>
+                                                        <option value="30">30</option>
+                                                        <option value="31">31</option>
+                                                        <option value="32">32</option>
+                                                        <option value="33">33</option>
+                                                        <option value="34">34</option>
+                                                        <option value="35">35</option>
+                                                        <option value="36">36</option>
+                                                        <option value="37">37</option>
+                                                        <option value="38">38</option>
+                                                        <option value="39">39</option>
+                                                        <option value="40">40</option>
+                                                        <option value="41">41</option>
+                                                        <option value="42">42</option>
+                                                        <option value="43">43</option>
+                                                        <option value="44">44</option>
+                                                        <option value="45">45</option>
+                                                        <option value="46">46</option>
+                                                        <option value="47">47</option>
+                                                        <option value="48">48</option>
+                                                        <option value="49">49</option>
+                                                        <option value="50">50</option>
+                                                        <option value="51">51</option>
+                                                        <option value="52">52</option>
+                                                        <option value="53">53</option>
+                                                        <option value="54">54</option>
+                                                        <option value="55">55</option>
+                                                        <option value="56">56</option>
+                                                        <option value="57">57</option>
+                                                        <option value="58">58</option>
+                                                        <option value="59">59</option>
+                                                    </select>
+                                                </td>
+                                                <td> &nbsp;&nbsp;&nbsp;&nbsp; </td>
+                                                <td><input type="button" value=" 转换 " onclick="calcAll()"> <input type="button" value=" 现在 " onclick="calcNow()"></td>
+                                            </tr>
+                                            </tbody></table>
+                                        <table id="tab_g" border="0" cellspacing="2" cellpadding="0" style="display:none">
+                                            <tbody><tr>
+                                                <td>日</td>
+                                                <td> </td>
+                                                <td>月</td>
+                                                <td> </td>
+                                                <td>年</td>
+                                                <td> </td>
+                                                <td>时</td>
+                                                <td> </td>
+                                                <td>分</td>
+                                                <td> </td>
+                                                <td>秒</td>
+                                                <td> </td>
+                                                <td> </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <select id="day_g">
+                                                        <option value="1">01</option>
+                                                        <option value="2">02</option>
+                                                        <option value="3">03</option>
+                                                        <option value="4">04</option>
+                                                        <option value="5">05</option>
+                                                        <option value="6">06</option>
+                                                        <option value="7">07</option>
+                                                        <option value="8">08</option>
+                                                        <option value="9">09</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                        <option value="15">15</option>
+                                                        <option value="16">16</option>
+                                                        <option value="17">17</option>
+                                                        <option value="18">18</option>
+                                                        <option value="19">19</option>
+                                                        <option value="20">20</option>
+                                                        <option value="21">21</option>
+                                                        <option value="22">22</option>
+                                                        <option value="23">23</option>
+                                                        <option value="24">24</option>
+                                                        <option value="25">25</option>
+                                                        <option value="26">26</option>
+                                                        <option value="27">27</option>
+                                                        <option value="28">28</option>
+                                                        <option value="29">29</option>
+                                                        <option value="30">30</option>
+                                                        <option value="31">31</option>
+                                                    </select>
+                                                </td>
+                                                <td>/</td>
+                                                <td>
+                                                    <select id="month_g">
+                                                        <option value="1">Jan</option>
+                                                        <option value="2">Feb</option>
+                                                        <option value="3">Mar</option>
+                                                        <option value="4">Apr</option>
+                                                        <option value="5">May</option>
+                                                        <option value="6">Jun</option>
+                                                        <option value="7">Jul</option>
+                                                        <option value="8">Aug</option>
+                                                        <option value="9">Sep</option>
+                                                        <option value="10">Oct</option>
+                                                        <option value="11">Nov</option>
+                                                        <option value="12">Dec</option>
+                                                    </select>
+                                                </td>
+                                                <td>/</td>
+                                                <td>
+                                                    <select id="year_g">
+                                                        <option value="1970">1970</option>
+                                                        <option value="1971">1971</option>
+                                                        <option value="1972">1972</option>
+                                                        <option value="1973">1973</option>
+                                                        <option value="1974">1974</option>
+                                                        <option value="1975">1975</option>
+                                                        <option value="1976">1976</option>
+                                                        <option value="1977">1977</option>
+                                                        <option value="1978">1978</option>
+                                                        <option value="1979">1979</option>
+                                                        <option value="1980">1980</option>
+                                                        <option value="1981">1981</option>
+                                                        <option value="1982">1982</option>
+                                                        <option value="1983">1983</option>
+                                                        <option value="1984">1984</option>
+                                                        <option value="1985">1985</option>
+                                                        <option value="1986">1986</option>
+                                                        <option value="1987">1987</option>
+                                                        <option value="1988">1988</option>
+                                                        <option value="1989">1989</option>
+                                                        <option value="1990">1990</option>
+                                                        <option value="1991">1991</option>
+                                                        <option value="1992">1992</option>
+                                                        <option value="1993">1993</option>
+                                                        <option value="1994">1994</option>
+                                                        <option value="1995">1995</option>
+                                                        <option value="1996">1996</option>
+                                                        <option value="1997">1997</option>
+                                                        <option value="1998">1998</option>
+                                                        <option value="1999">1999</option>
+                                                        <option value="2000">2000</option>
+                                                        <option value="2001">2001</option>
+                                                        <option value="2002">2002</option>
+                                                        <option value="2003">2003</option>
+                                                        <option value="2004">2004</option>
+                                                        <option value="2005">2005</option>
+                                                        <option value="2006">2006</option>
+                                                        <option value="2007">2007</option>
+                                                        <option value="2008">2008</option>
+                                                        <option value="2009">2009</option>
+                                                        <option value="2010">2010</option>
+                                                        <option value="2011">2011</option>
+                                                        <option value="2012">2012</option>
+                                                        <option value="2013">2013</option>
+                                                        <option value="2014">2014</option>
+                                                        <option value="2015">2015</option>
+                                                        <option value="2016">2016</option>
+                                                        <option value="2017">2017</option>
+                                                        <option value="2018">2018</option>
+                                                        <option value="2019">2019</option>
+                                                        <option value="2020">2020</option>
+                                                        <option value="2021">2021</option>
+                                                        <option value="2022">2022</option>
+                                                        <option value="2023">2023</option>
+                                                        <option value="2024">2024</option>
+                                                        <option value="2025">2025</option>
+                                                        <option value="2026">2026</option>
+                                                        <option value="2027">2027</option>
+                                                        <option value="2028">2028</option>
+                                                        <option value="2029">2029</option>
+                                                        <option value="2030">2030</option>
+                                                    </select>
+                                                </td>
+                                                <td> &nbsp;&nbsp; </td>
+                                                <td>
+                                                    <select id="hour_g">
+                                                        <option value="0">0 am</option>
+                                                        <option value="1">1 am</option>
+                                                        <option value="2">2 am</option>
+                                                        <option value="3">3 am</option>
+                                                        <option value="4">4 am</option>
+                                                        <option value="5">5 am</option>
+                                                        <option value="6">6 am</option>
+                                                        <option value="7">7 am</option>
+                                                        <option value="8">8 am</option>
+                                                        <option value="9">9 am</option>
+                                                        <option value="10">10 am</option>
+                                                        <option value="11">11 am</option>
+                                                        <option value="12">0 pm</option>
+                                                        <option value="13">1 pm</option>
+                                                        <option value="14">2 pm</option>
+                                                        <option value="15">3 pm</option>
+                                                        <option value="16">4 pm</option>
+                                                        <option value="17">5 pm</option>
+                                                        <option value="18">6 pm</option>
+                                                        <option value="19">7 pm</option>
+                                                        <option value="20">8 pm</option>
+                                                        <option value="21">9 pm</option>
+                                                        <option value="22">10 pm</option>
+                                                        <option value="23">11 pm</option>
+                                                    </select>
+                                                </td>
+                                                <td>:</td>
+                                                <td>
+                                                    <select id="min_g">
+                                                        <option value="0">00</option>
+                                                        <option value="1">01</option>
+                                                        <option value="2">02</option>
+                                                        <option value="3">03</option>
+                                                        <option value="4">04</option>
+                                                        <option value="5">05</option>
+                                                        <option value="6">06</option>
+                                                        <option value="7">07</option>
+                                                        <option value="8">08</option>
+                                                        <option value="9">09</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                        <option value="15">15</option>
+                                                        <option value="16">16</option>
+                                                        <option value="17">17</option>
+                                                        <option value="18">18</option>
+                                                        <option value="19">19</option>
+                                                        <option value="20">20</option>
+                                                        <option value="21">21</option>
+                                                        <option value="22">22</option>
+                                                        <option value="23">23</option>
+                                                        <option value="24">24</option>
+                                                        <option value="25">25</option>
+                                                        <option value="26">26</option>
+                                                        <option value="27">27</option>
+                                                        <option value="28">28</option>
+                                                        <option value="29">29</option>
+                                                        <option value="30">30</option>
+                                                        <option value="31">31</option>
+                                                        <option value="32">32</option>
+                                                        <option value="33">33</option>
+                                                        <option value="34">34</option>
+                                                        <option value="35">35</option>
+                                                        <option value="36">36</option>
+                                                        <option value="37">37</option>
+                                                        <option value="38">38</option>
+                                                        <option value="39">39</option>
+                                                        <option value="40">40</option>
+                                                        <option value="41">41</option>
+                                                        <option value="42">42</option>
+                                                        <option value="43">43</option>
+                                                        <option value="44">44</option>
+                                                        <option value="45">45</option>
+                                                        <option value="46">46</option>
+                                                        <option value="47">47</option>
+                                                        <option value="48">48</option>
+                                                        <option value="49">49</option>
+                                                        <option value="50">50</option>
+                                                        <option value="51">51</option>
+                                                        <option value="52">52</option>
+                                                        <option value="53">53</option>
+                                                        <option value="54">54</option>
+                                                        <option value="55">55</option>
+                                                        <option value="56">56</option>
+                                                        <option value="57">57</option>
+                                                        <option value="58">58</option>
+                                                        <option value="59">59</option>
+                                                    </select>
+                                                </td>
+                                                <td>:</td>
+                                                <td>
+                                                    <select id="sec_g">
+                                                        <option value="0">00</option>
+                                                        <option value="1">01</option>
+                                                        <option value="2">02</option>
+                                                        <option value="3">03</option>
+                                                        <option value="4">04</option>
+                                                        <option value="5">05</option>
+                                                        <option value="6">06</option>
+                                                        <option value="7">07</option>
+                                                        <option value="8">08</option>
+                                                        <option value="9">09</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                        <option value="15">15</option>
+                                                        <option value="16">16</option>
+                                                        <option value="17">17</option>
+                                                        <option value="18">18</option>
+                                                        <option value="19">19</option>
+                                                        <option value="20">20</option>
+                                                        <option value="21">21</option>
+                                                        <option value="22">22</option>
+                                                        <option value="23">23</option>
+                                                        <option value="24">24</option>
+                                                        <option value="25">25</option>
+                                                        <option value="26">26</option>
+                                                        <option value="27">27</option>
+                                                        <option value="28">28</option>
+                                                        <option value="29">29</option>
+                                                        <option value="30">30</option>
+                                                        <option value="31">31</option>
+                                                        <option value="32">32</option>
+                                                        <option value="33">33</option>
+                                                        <option value="34">34</option>
+                                                        <option value="35">35</option>
+                                                        <option value="36">36</option>
+                                                        <option value="37">37</option>
+                                                        <option value="38">38</option>
+                                                        <option value="39">39</option>
+                                                        <option value="40">40</option>
+                                                        <option value="41">41</option>
+                                                        <option value="42">42</option>
+                                                        <option value="43">43</option>
+                                                        <option value="44">44</option>
+                                                        <option value="45">45</option>
+                                                        <option value="46">46</option>
+                                                        <option value="47">47</option>
+                                                        <option value="48">48</option>
+                                                        <option value="49">49</option>
+                                                        <option value="50">50</option>
+                                                        <option value="51">51</option>
+                                                        <option value="52">52</option>
+                                                        <option value="53">53</option>
+                                                        <option value="54">54</option>
+                                                        <option value="55">55</option>
+                                                        <option value="56">56</option>
+                                                        <option value="57">57</option>
+                                                        <option value="58">58</option>
+                                                        <option value="59">59</option>
+                                                    </select>
+                                                </td>
+                                                <td> &nbsp;&nbsp;&nbsp;&nbsp; </td>
+                                                <td><input type="button" value=" 转换 " onclick="calcAll()"> <input type="button" value=" 现在 " onclick="calcNow()"></td>
+                                            </tr>
+                                            </tbody></table>
+                                        <table id="tab_u" border="0" cellspacing="2" cellpadding="0" style="display:none">
+                                            <tbody><tr>
+                                                <td>月</td>
+                                                <td> </td>
+                                                <td>日</td>
+                                                <td> </td>
+                                                <td>年</td>
+                                                <td> </td>
+                                                <td>时</td>
+                                                <td> </td>
+                                                <td>分</td>
+                                                <td> </td>
+                                                <td>秒</td>
+                                                <td> </td>
+                                                <td> </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <select id="month_u">
+                                                        <option value="1">Jan</option>
+                                                        <option value="2">Feb</option>
+                                                        <option value="3">Mar</option>
+                                                        <option value="4">Apr</option>
+                                                        <option value="5">May</option>
+                                                        <option value="6">Jun</option>
+                                                        <option value="7">Jul</option>
+                                                        <option value="8">Aug</option>
+                                                        <option value="9">Sep</option>
+                                                        <option value="10">Oct</option>
+                                                        <option value="11">Nov</option>
+                                                        <option value="12">Dec</option>
+                                                    </select>
+                                                </td>
+                                                <td>/</td>
+                                                <td>
+                                                    <select id="day_u">
+                                                        <option value="1">01</option>
+                                                        <option value="2">02</option>
+                                                        <option value="3">03</option>
+                                                        <option value="4">04</option>
+                                                        <option value="5">05</option>
+                                                        <option value="6">06</option>
+                                                        <option value="7">07</option>
+                                                        <option value="8">08</option>
+                                                        <option value="9">09</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                        <option value="15">15</option>
+                                                        <option value="16">16</option>
+                                                        <option value="17">17</option>
+                                                        <option value="18">18</option>
+                                                        <option value="19">19</option>
+                                                        <option value="20">20</option>
+                                                        <option value="21">21</option>
+                                                        <option value="22">22</option>
+                                                        <option value="23">23</option>
+                                                        <option value="24">24</option>
+                                                        <option value="25">25</option>
+                                                        <option value="26">26</option>
+                                                        <option value="27">27</option>
+                                                        <option value="28">28</option>
+                                                        <option value="29">29</option>
+                                                        <option value="30">30</option>
+                                                        <option value="31">31</option>
+                                                    </select>
+                                                </td>
+                                                <td>/</td>
+                                                <td>
+                                                    <select id="year_u">
+                                                        <option value="1970">1970</option>
+                                                        <option value="1971">1971</option>
+                                                        <option value="1972">1972</option>
+                                                        <option value="1973">1973</option>
+                                                        <option value="1974">1974</option>
+                                                        <option value="1975">1975</option>
+                                                        <option value="1976">1976</option>
+                                                        <option value="1977">1977</option>
+                                                        <option value="1978">1978</option>
+                                                        <option value="1979">1979</option>
+                                                        <option value="1980">1980</option>
+                                                        <option value="1981">1981</option>
+                                                        <option value="1982">1982</option>
+                                                        <option value="1983">1983</option>
+                                                        <option value="1984">1984</option>
+                                                        <option value="1985">1985</option>
+                                                        <option value="1986">1986</option>
+                                                        <option value="1987">1987</option>
+                                                        <option value="1988">1988</option>
+                                                        <option value="1989">1989</option>
+                                                        <option value="1990">1990</option>
+                                                        <option value="1991">1991</option>
+                                                        <option value="1992">1992</option>
+                                                        <option value="1993">1993</option>
+                                                        <option value="1994">1994</option>
+                                                        <option value="1995">1995</option>
+                                                        <option value="1996">1996</option>
+                                                        <option value="1997">1997</option>
+                                                        <option value="1998">1998</option>
+                                                        <option value="1999">1999</option>
+                                                        <option value="2000">2000</option>
+                                                        <option value="2001">2001</option>
+                                                        <option value="2002">2002</option>
+                                                        <option value="2003">2003</option>
+                                                        <option value="2004">2004</option>
+                                                        <option value="2005">2005</option>
+                                                        <option value="2006">2006</option>
+                                                        <option value="2007">2007</option>
+                                                        <option value="2008">2008</option>
+                                                        <option value="2009">2009</option>
+                                                        <option value="2010">2010</option>
+                                                        <option value="2011">2011</option>
+                                                        <option value="2012">2012</option>
+                                                        <option value="2013">2013</option>
+                                                        <option value="2014">2014</option>
+                                                        <option value="2015">2015</option>
+                                                        <option value="2016">2016</option>
+                                                        <option value="2017">2017</option>
+                                                        <option value="2018">2018</option>
+                                                        <option value="2019">2019</option>
+                                                        <option value="2020">2020</option>
+                                                        <option value="2021">2021</option>
+                                                        <option value="2022">2022</option>
+                                                        <option value="2023">2023</option>
+                                                        <option value="2024">2024</option>
+                                                        <option value="2025">2025</option>
+                                                        <option value="2026">2026</option>
+                                                        <option value="2027">2027</option>
+                                                        <option value="2028">2028</option>
+                                                        <option value="2029">2029</option>
+                                                        <option value="2030">2030</option>
+                                                    </select>
+                                                </td>
+                                                <td> &nbsp;&nbsp; </td>
+                                                <td>
+                                                    <select id="hour_u">
+                                                        <option value="0">0 am</option>
+                                                        <option value="1">1 am</option>
+                                                        <option value="2">2 am</option>
+                                                        <option value="3">3 am</option>
+                                                        <option value="4">4 am</option>
+                                                        <option value="5">5 am</option>
+                                                        <option value="6">6 am</option>
+                                                        <option value="7">7 am</option>
+                                                        <option value="8">8 am</option>
+                                                        <option value="9">9 am</option>
+                                                        <option value="10">10 am</option>
+                                                        <option value="11">11 am</option>
+                                                        <option value="12">0 pm</option>
+                                                        <option value="13">1 pm</option>
+                                                        <option value="14">2 pm</option>
+                                                        <option value="15">3 pm</option>
+                                                        <option value="16">4 pm</option>
+                                                        <option value="17">5 pm</option>
+                                                        <option value="18">6 pm</option>
+                                                        <option value="19">7 pm</option>
+                                                        <option value="20">8 pm</option>
+                                                        <option value="21">9 pm</option>
+                                                        <option value="22">10 pm</option>
+                                                        <option value="23">11 pm</option>
+                                                    </select>
+                                                </td>
+                                                <td>:</td>
+                                                <td>
+                                                    <select id="min_u">
+                                                        <option value="0">00</option>
+                                                        <option value="1">01</option>
+                                                        <option value="2">02</option>
+                                                        <option value="3">03</option>
+                                                        <option value="4">04</option>
+                                                        <option value="5">05</option>
+                                                        <option value="6">06</option>
+                                                        <option value="7">07</option>
+                                                        <option value="8">08</option>
+                                                        <option value="9">09</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                        <option value="15">15</option>
+                                                        <option value="16">16</option>
+                                                        <option value="17">17</option>
+                                                        <option value="18">18</option>
+                                                        <option value="19">19</option>
+                                                        <option value="20">20</option>
+                                                        <option value="21">21</option>
+                                                        <option value="22">22</option>
+                                                        <option value="23">23</option>
+                                                        <option value="24">24</option>
+                                                        <option value="25">25</option>
+                                                        <option value="26">26</option>
+                                                        <option value="27">27</option>
+                                                        <option value="28">28</option>
+                                                        <option value="29">29</option>
+                                                        <option value="30">30</option>
+                                                        <option value="31">31</option>
+                                                        <option value="32">32</option>
+                                                        <option value="33">33</option>
+                                                        <option value="34">34</option>
+                                                        <option value="35">35</option>
+                                                        <option value="36">36</option>
+                                                        <option value="37">37</option>
+                                                        <option value="38">38</option>
+                                                        <option value="39">39</option>
+                                                        <option value="40">40</option>
+                                                        <option value="41">41</option>
+                                                        <option value="42">42</option>
+                                                        <option value="43">43</option>
+                                                        <option value="44">44</option>
+                                                        <option value="45">45</option>
+                                                        <option value="46">46</option>
+                                                        <option value="47">47</option>
+                                                        <option value="48">48</option>
+                                                        <option value="49">49</option>
+                                                        <option value="50">50</option>
+                                                        <option value="51">51</option>
+                                                        <option value="52">52</option>
+                                                        <option value="53">53</option>
+                                                        <option value="54">54</option>
+                                                        <option value="55">55</option>
+                                                        <option value="56">56</option>
+                                                        <option value="57">57</option>
+                                                        <option value="58">58</option>
+                                                        <option value="59">59</option>
+                                                    </select>
+                                                </td>
+                                                <td>:</td>
+                                                <td>
+                                                    <select id="sec_u">
+                                                        <option value="0">00</option>
+                                                        <option value="1">01</option>
+                                                        <option value="2">02</option>
+                                                        <option value="3">03</option>
+                                                        <option value="4">04</option>
+                                                        <option value="5">05</option>
+                                                        <option value="6">06</option>
+                                                        <option value="7">07</option>
+                                                        <option value="8">08</option>
+                                                        <option value="9">09</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                        <option value="15">15</option>
+                                                        <option value="16">16</option>
+                                                        <option value="17">17</option>
+                                                        <option value="18">18</option>
+                                                        <option value="19">19</option>
+                                                        <option value="20">20</option>
+                                                        <option value="21">21</option>
+                                                        <option value="22">22</option>
+                                                        <option value="23">23</option>
+                                                        <option value="24">24</option>
+                                                        <option value="25">25</option>
+                                                        <option value="26">26</option>
+                                                        <option value="27">27</option>
+                                                        <option value="28">28</option>
+                                                        <option value="29">29</option>
+                                                        <option value="30">30</option>
+                                                        <option value="31">31</option>
+                                                        <option value="32">32</option>
+                                                        <option value="33">33</option>
+                                                        <option value="34">34</option>
+                                                        <option value="35">35</option>
+                                                        <option value="36">36</option>
+                                                        <option value="37">37</option>
+                                                        <option value="38">38</option>
+                                                        <option value="39">39</option>
+                                                        <option value="40">40</option>
+                                                        <option value="41">41</option>
+                                                        <option value="42">42</option>
+                                                        <option value="43">43</option>
+                                                        <option value="44">44</option>
+                                                        <option value="45">45</option>
+                                                        <option value="46">46</option>
+                                                        <option value="47">47</option>
+                                                        <option value="48">48</option>
+                                                        <option value="49">49</option>
+                                                        <option value="50">50</option>
+                                                        <option value="51">51</option>
+                                                        <option value="52">52</option>
+                                                        <option value="53">53</option>
+                                                        <option value="54">54</option>
+                                                        <option value="55">55</option>
+                                                        <option value="56">56</option>
+                                                        <option value="57">57</option>
+                                                        <option value="58">58</option>
+                                                        <option value="59">59</option>
+                                                    </select>
+                                                </td>
+                                                <td> &nbsp;&nbsp;&nbsp;&nbsp; </td>
+                                                <td><input type="button" value=" 转换 " onclick="calcAll()"> <input type="button" value=" 现在 " onclick="calcNow()"></td>
+                                            </tr>
+                                            </tbody></table>
+                                    </div>
+                                    <div id="srctime"><div style="margin: 5 5 5 5; color:#0000A0; font-weight:bold">2017-08-24 12:06:35</div></div>
+                                    <div id="list"><table border="0" width="100%" cellspacing="0" cellpadding="5" style="border: 1 solid #C7D4DC; "><tbody><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-12:00) 日界线西</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-23 16:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-11:00) 中途岛, 萨摩亚群岛</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-23 17:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-10:00) 夏威夷</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-23 18:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-09:00) 阿拉斯加州</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-23 19:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-08:00) 太平洋时间 (美国 &amp;加拿大), 蒂华纳</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-23 20:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-07:00) 山地时间 (美国 &amp;加拿大)</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-23 21:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-07:00) 亚历桑那州</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-23 21:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-07:00) 奇瓦瓦, 拉巴斯, 马萨特兰</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-23 21:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-06:00) 萨斯喀彻温</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-23 22:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-06:00) 中部时间 (美国 &amp;加拿大)</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-23 22:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-06:00) 中美洲</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-23 22:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-06:00) 瓜达拉哈拉, 墨西哥, 蒙特雷</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-23 22:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-05:00) 波哥大, 利马, 基多</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-23 23:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-05:00) 东部时间 (美国 &amp;加拿大)</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-23 23:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-05:00) 印地安那州 (东部)</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-23 23:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-04:00) 大西洋时间 (加拿大)</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 00:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-04:00) 加拉加斯, 拉巴斯</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 00:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-04:00) 圣地牙哥</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 00:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-03:30) 纽芬兰</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 00:36:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-03:00) 巴西利亚</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 01:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-03:00) 布宜诺斯艾利斯, 乔治敦</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 01:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-03:00) 格陵兰</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 01:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-02:00) 中大西洋</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 02:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-01:00) 佛得角群岛</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 03:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(-01:00) 亚速尔群岛</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 03:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+00:00) 格林威治标准时间: 都柏林, 爱丁堡, 伦敦, 里斯本</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 04:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+00:00) 卡萨布兰卡, 蒙罗维亚</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 04:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+01:00) 阿姆斯特丹, 柏林, 伯尔尼, 罗马, 斯德哥尔摩, 维也纳</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 05:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+01:00) 贝尔格莱德, 布拉迪斯拉瓦, 布达佩斯, 卢布尔雅那, 布拉格</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 05:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+01:00) 布鲁塞尔, 哥本哈根, 马德里, 巴黎</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 05:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+01:00) 萨拉热窝, 斯科普里, 华沙, 萨格勒布</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 05:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+01:00) 中非西部</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 05:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+02:00) 布加勒斯特</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 06:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+02:00) 哈拉雷, 比勒陀利亚</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 06:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+02:00) 赫尔辛基，基辅，里加，索非亚，塔林，维尔纽斯</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 06:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+02:00) 开罗</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 06:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+02:00) 雅典，贝鲁特，伊斯坦布尔，明斯克</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 06:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+02:00) 耶路撒冷</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 06:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+03:00) 巴格达</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 07:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+03:00) 科威特, 利雅得</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 07:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+03:00) 莫斯科, 圣彼得斯堡, 伏尔加格勒</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 07:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+03:00) 内罗毕</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 07:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+03:30) 德黑兰</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 07:36:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+04:00) 阿布扎比, 马斯喀特</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 08:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+04:00) 巴库, 第比利斯, 埃里温</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 08:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+04:30) 喀布尔</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 08:36:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+05:00) 叶卡捷琳堡</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 09:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+05:00) 伊斯兰堡, 卡拉奇, 塔什干</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 09:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+05:30) 马德拉斯，加尔各答，孟买，新德里</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 09:36:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+05:45) 加德满都</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 09:51:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+06:00) 阿拉木图, 新西伯利亚</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 10:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+06:00) 阿斯塔那, 达卡</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 10:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+06:00) 斯里哈亚华登尼普拉</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 10:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+06:30) 仰光</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 10:36:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+07:00) 克拉斯诺亚尔斯克</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 11:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+07:00) 曼谷, 河内, 雅加达</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 11:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+08:00) 北京, 重庆, 香港, 乌鲁木齐</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 12:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+08:00) 吉隆坡, 新加坡</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 12:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+08:00) 珀斯</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 12:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+08:00) 台北</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 12:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+08:00) 伊尔库茨克, 乌兰巴托</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 12:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+09:00) 大阪, 扎幌, 东京</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 13:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+09:00) 汉城</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 13:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+09:00) 雅库茨克</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 13:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+09:30) 阿德莱得</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 13:36:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+09:30) 达尔文</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 13:36:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+10:00) 布里斯班</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 14:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+10:00) 符拉迪沃斯托克</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 14:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+10:00) 关岛, 莫尔兹比港口</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 14:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+10:00) 霍巴特</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 14:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+10:00) 堪培拉, 墨尔本, 悉尼</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 14:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+11:00) 马加丹, 所罗门群岛, 新喀里多尼亚</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 15:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+12:00) 奥克兰, 惠灵顿</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 16:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+12:00) 斐济, 勘察加半岛, 马绍尔群岛</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 16:06:35</td></tr><tr><td width="100%" style="border-bottom:1 solid #e0e0e; color:#07519A">(+13:00) 努库阿洛法</td><td nowrap="" style="border-bottom:1 solid #e0e0e" width="" align="right">2017-08-24 17:06:35</td></tr></tbody></table></div>
+                                    <script type="text/javascript">calcNow();</script>
+                                </div>
+                            </div>
+                            <i class="flag_tl_t3"></i>
+                            <i class="flag_tr_t3"></i>
+                            <i class="flag_bl_t3"></i>
+                            <i class="flag_br_t3"></i>
+                        </div>
+                        <div class="intro_area">
+                            <p>输入日期数，可以计算这天是否是有效的日期，同时计算出这一天是星期几。</p>
+                        </div>
+
+
+                    </div>
+                    <i class="flag_tl_t1"></i>
+                    <i class="flag_tr_t1"></i>
+                    <i class="flag_bl_t1"></i>
+                    <i class="flag_br_t1"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+</body></head></html>

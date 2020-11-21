@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>二进制加法 减法 乘法 除法计算器</title>
+    <link type="text/css" rel="stylesheet" href="./css/mpublic_v2.css">
+    <link type="text/css" rel="stylesheet" href="./css/base.css">
+    <link type="text/css" rel="stylesheet" href="./css/number.css">
+    <script language="javascript" src="./js/common.js"></script>
+    <script language="javascript">
+        function xc(){
+            var res1,res2,res3,res4;
+            var fv = parseFloat(gf('df','fv'));
+            var sv = parseFloat(gf('df','sv'));
+            //calculation for Radians Per Minute
+            //http://www.onlineconversion.com/forum/forum_1127224365.htm
+            var fv1=condec(fv);  var sv1=condec(sv);
+// BINARY
+            res1=fv1+sv1; res1=deciToBin(res1); res2=fv1-sv1;
+            if(res2>=0)
+                res2=deciToBin(parseInt(res2));
+            else if(res2<0)
+            {
+                res2=res2.toString();
+                res2=res2.substr(1);
+                res2=deciToBin(parseInt(res2));
+                res2='-'+res2;
+            }
+
+            res3=fv1*sv1; res3=deciToBin(res3); res4=fv1/sv1; res4=deciToBin(Math.floor(res4));
+            showresult(1,res1);
+            showresult(2,res2);
+            showresult(3,res3);
+            showresult(4,res4);
+        }
+        function condec(ss)
+        {
+            var ress=0;
+            fv=ss.toString(); var k=fv.length;
+            for(var i=0,j=k-1;i<k;i++)
+            {	var x=parseInt(fv.charAt(j));
+                ress=ress+(x*Math.pow(2,i));
+                j--;
+            }
+            return ress;
+        }
+        function deciToBin(arg)
+        {
+            res1 = 999;
+            args = arg;
+            while(args>1)
+            {
+                arg1 = parseInt(args/2);
+                arg2 = args%2;
+                args = arg1;
+                //alert(arg1);
+                //alert(arg2);
+                if(res1 == 999)
+                {
+                    res1=arg2.toString();
+                }
+                else
+                {
+                    res1=arg2.toString()+res1.toString();
+                }
+            }
+            if(args==1 && res1 != 999)
+            {
+                res1=args.toString()+res1.toString();
+            }
+            else if(args==0 && res1 == 999)
+            {
+                res1=0;
+            }
+            else if(res1 == 999)
+            {
+                res1=1;
+            }
+            var ll = res1.length;
+            while(ll%4 != 0)
+            {
+                res1 = '0'+res1;
+                ll = res1.length;
+            }
+            return res1;
+        }
+    </script>
+</head>
+<body style="">
+
+
+<div class="main">
+
+
+    <div class="cont">
+        <div class="col_left">
+            <div class="fn_part fn_sfz mod_box_t1">
+                <div class="hd">
+                    <h2>二进制加法 减法 乘法 除法计算器</h2>
+                </div>
+                <div class="bd">
+                    <div class="mod_box_t3 fn_box">
+                        <div class="box_con">
+                            <div class="mathmod_form">
+                                <form name="df">
+                                    <table>
+                                        <tbody>
+                                        <tr><td class="s1">二进制数A：</td><td class="s2"><input type="text" maxlength="15" size="15" name="fv" onkeyup=""></td></tr>
+                                        <tr><td class="s1">二进制数B：</td><td class="s2"><input type="text" maxlength="15" size="15" name="sv" onkeyup=""></td></tr>
+                                        <tr><td class="s1"></td>
+                                            <td class="s2"><input type="button" value="计算" size="10" name="Result" onclick="xc(1)" class="calc"></td></tr>
+                                        <tr><td>二进制</td></tr>
+                                        <tr><td>加法：</td><td>= <input type="text" readonly="readonly" id="r1" size="class=rval" value="-"> </td></tr>
+                                        <tr><td>减法：</td><td>= <input type="text" readonly="readonly" id="r2" size="class=rval" value="-"> </td></tr>
+                                        <tr><td>乘法：</td><td>= <input type="text" readonly="readonly" id="r3" size="class=rval" value="-"> </td></tr>
+                                        <tr><td>除法：</td><td>= <input type="text" readonly="readonly" id="r4" size="class=rval" value="-"> </td></tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                        <i class="flag_tl_t3"></i>
+                        <i class="flag_tr_t3"></i>
+                        <i class="flag_bl_t3"></i>
+                        <i class="flag_br_t3"></i>
+                    </div>
+                    <div class="intro_area">
+                        <p>二进制乘法和加法都是通过对二进制数的移位来实现的，移位相当于×2，计算机算根据给出的加法式子与乘法式子算要移多少位</p>
+                    </div>
+                </div>
+                <i class="flag_tl_t1"></i>
+                <i class="flag_tr_t1"></i>
+                <i class="flag_bl_t1"></i>
+                <i class="flag_br_t1"></i>
+            </div>
+        </div>
+        <div id="col_right" class="col_right">
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+</body></html>

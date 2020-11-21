@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>年龄计算器</title>
+
+    <link type="text/css" rel="stylesheet" href="./css/mpublic_v2.css">
+    <link type="text/css" rel="stylesheet" href="./css/base.css">
+    <link type="text/css" rel="stylesheet" href="./css/number.css">
+
+    <script language="JavaScript">
+        <!-- Begin
+        function run() {
+            with (document.agecalc) {
+                dd = parseInt(day.selectedIndex) + 1;
+                mm = parseInt(month.selectedIndex) + 1;
+                yy = year.value;
+                if (yy.length != 4 || isNaN(yy)) {
+                    document.agecalc.timealive.value = "请输入4位数的年份.";
+                    document.agecalc.year.select();
+                    document.agecalc.year.focus();
+                    return;
+                }
+            }
+            days = new Date();
+            gdate = days.getDate();
+            gmonth = days.getMonth();
+            gyear = days.getYear();
+            if (gyear < 2000) gyear += 1900;
+            age = gyear - yy;
+            if ((mm == (gmonth + 1)) && (dd <= parseInt(gdate))) {
+                age = age;
+            } else {
+                if (mm <= (gmonth)) {
+                    age = age;
+                } else {
+                    age = age - 1;
+                }
+            }
+            if (age == 0)
+                age = age;
+            document.agecalc.timealive.value = "你已经满了 " + age+ " 周岁 . . .\n\n";
+            if (mm <= (gmonth + 1))
+                age = age - 1;
+            if ((mm == (gmonth + 1)) && (dd > parseInt(gdate)))
+                age = age + 1;
+            var m;
+            var n;
+            if (mm == 12) n = 31 - dd;
+            if (mm == 11) n = 61 - dd;
+            if (mm == 10) n = 92 - dd;
+            if (mm == 9) n = 122 - dd;
+            if (mm == 8) n = 153 - dd;
+            if (mm == 7) n = 184 - dd;
+            if (mm == 6) n = 214 - dd;
+            if (mm == 5) n = 245 - dd;
+            if (mm == 4) n = 275 - dd;
+            if (mm == 3) n = 306 - dd;
+            if (mm == 2) { n = 334 - dd; if (leapyear(yy)) n++; }
+            if (mm == 1) { n = 365 - dd; if (leapyear(yy)) n++; }
+            if (gmonth == 1) m = 31;
+            if (gmonth == 2) {
+                m = 59;
+                if (leapyear(gyear)) m++;
+            }
+            if (gmonth == 3)  { m = 90;  if (leapyear(gyear)) m++; }
+            if (gmonth == 4)  { m = 120; if (leapyear(gyear)) m++; }
+            if (gmonth == 5)  { m = 151; if (leapyear(gyear)) m++; }
+            if (gmonth == 6)  { m = 181; if (leapyear(gyear)) m++; }
+            if (gmonth == 7)  { m = 212; if (leapyear(gyear)) m++; }
+            if (gmonth == 8)  { m = 243; if (leapyear(gyear)) m++; }
+            if (gmonth == 9)  { m = 273; if (leapyear(gyear)) m++; }
+            if (gmonth == 10) { m = 304; if (leapyear(gyear)) m++; }
+            if (gmonth == 11) { m = 334; if (leapyear(gyear)) m++; }
+            if (gmonth == 12) { m = 365; if (leapyear(gyear)) m++; }
+            months = age * 12;
+            months += 12 - parseInt(mm);
+            months += gmonth;
+            totdays = (parseInt(age) * 365);
+            totdays += age / 4;
+            totdays = parseInt(totdays) + gdate + m + n;
+            if (gmonth == 1) p = 31 + gdate;
+            if (gmonth == 2) {
+                p = 59 + gdate;
+                if (leapyear(gyear)) m = m+1;
+            }
+            if (gmonth == 3)  { p = 90 + gdate;  if (leapyear(gyear)) p++; }
+            if (gmonth == 4)  { p = 120 + gdate; if (leapyear(gyear)) p++; }
+            if (gmonth == 5)  { p = 151 + gdate; if (leapyear(gyear)) p++; }
+            if (gmonth == 6)  { p = 181 + gdate; if (leapyear(gyear)) p++; }
+            if (gmonth == 7)  { p = 212 + gdate; if (leapyear(gyear)) p++; }
+            if (gmonth == 8)  { p = 243 + gdate; if (leapyear(gyear)) p++; }
+            if (gmonth == 9)  { p = 273 + gdate; if (leapyear(gyear)) p++; }
+            if (gmonth == 10) { p = 304 + gdate; if (leapyear(gyear)) p++; }
+            if (gmonth == 11) { p = 334 + gdate; if (leapyear(gyear)) p++; }
+            if (gmonth == 12) { p = 365 + gdate; if (leapyear(gyear)) p++; }
+            weeks = (age * 365) + n + p;
+            weeks = weeks / 7;
+            etcdays = parseFloat(weeks) - parseInt(weeks);
+            etcdays = Math.round(etcdays * 7);
+            weeks = parseInt(weeks);
+            etcdays += parseInt(age / 4);
+            if (etcdays > 7)
+                weeks += parseInt(etcdays / 7);
+            document.agecalc.timealive.value += "     或 " + weeks + " 周龄（才只有这么几周啊）\n";
+            document.agecalc.timealive.value += "     或 " + months + " 月龄（好少啊）\n";
+            document.agecalc.timealive.value += "     或 " + totdays + " 日龄（我才来到世上万吧天，有木有？）\n";
+            var time = new Date();
+            ghour = time.getHours();
+            gmin = time.getMinutes();
+            gsec = time.getSeconds();
+            hour = ((age * 365) + n + p) * 24;
+            hour += (parseInt(age / 4) * 24);
+            document.agecalc.timealive.value += "     或 " + hour + " 小时（才这点小时啊）\n";
+            var min = (hour * 60) + gmin;
+            document.agecalc.timealive.value += "     或 " + min + " 分钟（这几个时间还挺长的）\n";
+            sec = (min * 60) + gsec;
+            document.agecalc.timealive.value += "     或 " + sec + " 秒钟（生命宝贵，努力啊）";
+            mm = mm - 1;
+            var r;
+            if (mm == 0) r = 0;
+            if (mm == 1) r = 31;
+            if (mm == 2) { r = 59; if (leapyear(gyear)) m++; }
+            if (mm == 3)  { r = 90;  if (leapyear(gyear)) r++; }
+            if (mm == 4)  { r = 120; if (leapyear(gyear)) r++; }
+            if (mm == 5)  { r = 151; if (leapyear(gyear)) r++; }
+            if (mm == 6)  { r = 181; if (leapyear(gyear)) r++; }
+            if (mm == 7)  { r = 212; if (leapyear(gyear)) r++; }
+            if (mm == 8)  { r = 243; if (leapyear(gyear)) r++; }
+            if (mm == 9)  { r = 273; if (leapyear(gyear)) r++; }
+            if (mm == 10) { r = 304; if (leapyear(gyear)) r++; }
+            if (mm == 11) { r = 334; if (leapyear(gyear)) r++; }
+            mm = mm + 1;
+            r = parseInt(r) + parseInt(dd);
+
+            if ((mm >= (gmonth + 1)) && (dd > gdate)) {
+                bday = r - m - gdate;
+            }
+            else {
+                if ((leapyear(gyear)) && ((mm > 2) && (dd < 29))) {
+                    a = 366;
+                } else {
+                    a = 365;
+                }
+                bday = a + (r - m - gdate);
+            }
+            nhour = 24 - parseInt(ghour);
+            nmin = 60 - parseInt(gmin);
+            nsec = 60 - parseInt(gsec);
+            while (bday > 366) bday -= 365;
+            if (((bday == 366) && (leapyear(gyear)) || ((bday == 365) && (!leapyear(gyear))))) {
+                document.agecalc.timealive.value += "\n\nAkvicor祝贺您！今天是你的生日！祝你生日快乐！";
+            } else {
+                document.agecalc.timealive.value += "\n\n另外，你下一个生日距今还有：\n"
+                    + bday + " 天 " + nhour + " 小时 " + nmin + " 分 " + nsec + " 秒（赶紧给父母、朋友测测吧！）";
+                setTimeout("run()", 1000);
+            }
+        }
+        function leapyear(a) {
+            if (((a%4 == 0) && (a%100 != 0)) || (a%400 == 0))
+                return true;
+            else
+                return false;
+        }
+        //  End -->
+    </script>
+</head>
+<body style="">
+
+
+<div class="wrapper">
+
+    <div class="main">
+
+
+
+        <div class="cont">
+            <div class="col_left">
+                <div class="fn_part fn_sfz mod_box_t1">
+                    <div class="hd">
+                        <h2>年龄在线计算器</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="mod_box_t3 fn_box">
+                            <div class="box_con">
+                                <div class="mathmod_form">
+                                    <form name="agecalc">
+                                        <div align="center"><font color="#7F9DB9"><b>你的生日是:</b></font>
+                                            <input type="text" name="year" size="6" maxlength="4" value="2007">
+                                            <b><font color="#7F9DB9">年</font></b>
+                                            <select name="month" size="1">
+                                                <option>1月
+                                                </option><option>2月
+                                                </option><option>3月
+                                                </option><option>4月
+                                                </option><option>5月
+                                                </option><option>6月
+                                                </option><option>7月
+                                                </option><option>8月
+                                                </option><option>9月
+                                                </option><option>10月
+                                                </option><option selected="">11月
+                                                </option><option>12月
+                                                </option></select>
+                                            <select name="day" size="1">
+                                                <option>1日
+                                                </option><option>2日
+                                                </option><option>3日
+                                                </option><option>4日
+                                                </option><option>5日
+                                                </option><option>6日
+                                                </option><option>7日
+                                                </option><option>8日
+                                                </option><option>9日
+                                                </option><option>10日
+                                                </option><option>11日
+                                                </option><option>12日
+                                                </option><option>13日
+                                                </option><option>14日
+                                                </option><option>15日
+                                                </option><option>16日
+                                                </option><option>17日
+                                                </option><option>18日
+                                                </option><option>19日
+                                                </option><option>20日
+                                                </option><option>21日
+                                                </option><option>22日
+                                                </option><option>23日
+                                                </option><option>24日
+                                                </option><option selected="">25日
+                                                </option><option>26日
+                                                </option><option>27日
+                                                </option><option>28日
+                                                </option><option>29日
+                                                </option><option>30日
+                                                </option><option>31日
+                                                </option></select>
+                                            <input type="button" name="start" value="计算" onclick="run();" class="calc">
+                                            <textarea rows="12" cols="60" name="timealive">　　追女孩子，你知道她自己多少岁了，但你知道她来到世界多少天了吗？多少月了吗？多少周了吗？如果当她知道你知道她所有的这些，是否对你刮目相看呢？
+
+    你只要输入4位数的出生年份，然后在下拉框中选择自己的出生月份和日期，再按“计算”按钮，本系统就可以精确计算出你的年龄、月龄、周龄直至时分秒。怎么样，赶紧查一查，把握好实实在在的每一天吧！</textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <i class="flag_tl_t3"></i>
+                            <i class="flag_tr_t3"></i>
+                            <i class="flag_bl_t3"></i>
+                            <i class="flag_br_t3"></i>
+                        </div>
+                        <div class="intro_area">
+                            <p>计算你的周龄、月龄、日龄、小时、分钟、秒钟</p>
+                        </div>
+
+                    </div>
+                    <i class="flag_tl_t1"></i>
+                    <i class="flag_tr_t1"></i>
+                    <i class="flag_bl_t1"></i>
+                    <i class="flag_br_t1"></i>
+                </div>
+            </div>
+            <div id="col_right" class="col_right">
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+</body></html>

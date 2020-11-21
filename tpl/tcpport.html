@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>TCP Port Check</title>
+    <style>
+        a {
+            TEXT-DECORATION: none
+        }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<style>
+    #content {
+        width: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 2%;
+    }
+    .arrow {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+    }
+
+    .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+
+    .left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+    }
+
+    .up {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+    }
+
+    .down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
+
+    .rectangle {
+        height: 30px;
+        width: 70px;
+        border:1px solid #004993;
+        background-color: #ffffff;
+    }
+
+    .rectangle_long {
+        height: 30px;
+        width: 170px;
+        border:1px solid #808080;
+        background-color: #ffffff;
+    }
+    .triangle-left {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-right: 20px solid #555;
+        border-bottom: 10px solid transparent;
+    }
+    .triangle-right {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-left: 20px solid #555;
+        border-bottom: 10px solid transparent;
+    }
+    .triangle-up {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 20px solid #555;
+    }
+    .triangle-down {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 20px solid #555;
+    }
+</style>
+
+<body id="content">
+<h1>TCP Port Check</h1>
+<form action="/tcpport" method="GET">
+    <table>
+        <tr>
+            <td><label for="host">HOST: </label></td>
+            <td><input type="text" name="host" id="host" class="rectangle_long"/></td>
+        </tr>
+        <tr>
+            <td><label for="port">PORT: </label></td>
+            <td><input type="text" name="port" id="port" class="rectangle_long"/></td>
+        </tr>
+    </table>
+    <br />
+    <button type="submit"  class="rectangle">Check</button>
+
+</form>
+
+</body>
+</html>

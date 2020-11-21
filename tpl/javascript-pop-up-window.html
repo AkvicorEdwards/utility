@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Javascript弹出代码生成</title>
+    <link type="text/css" rel="stylesheet" href="./css/mpublic_v2.css">
+    <link type="text/css" rel="stylesheet" href="./css/base.css">
+    <link type="text/css" rel="stylesheet" href="./css/number.css">
+    <script type="text/javascript" src="./js/javascript-pop-up-window2.js"></script>
+<body style="">
+<div id="header" style="height:75px;width: 990px;margin:0 auto">
+
+    <div class="wrapper">
+
+        <div class="main">
+
+
+            <div class="cont">
+                <div class="col_left">
+                    <div class="fn_part fn_sfz mod_box_t1">
+                        <div class="hd">
+                            <h2>弹出代码生成</h2>
+                        </div>
+                        <div class="bd">
+                            <div class="mod_box_t3 fn_box">
+                                <div class="box_con">
+                                    <div class="mathmod_form">
+                                        <form method="post" class="online-tools">
+                                            <p>修改下面的选项，输入你想要内容后点击生成按钮。</p>
+                                            <p>生成后，会出现相应的链接，你可以点击测试。</p>
+                                            <p>URL: <input id="destination" type="text" name="destination" value="https://" size="20"> </p>
+                                            <p>菜单栏：<input id="menubar" type="checkbox" name="menubar" value="1">
+                                                &nbsp; 工具栏：<input id="toolbar" type="checkbox" name="toolbar" value="1">
+                                                &nbsp; 地址：<input id="locationbar" type="checkbox" name="locationbar" value="1">
+                                                &nbsp; 滚动栏：<input id="scrollbars" type="checkbox" name="scrollbars" value="1" checked="checked">
+                                                &nbsp; 状态：<input id="statusbar" type="checkbox" name="statusbar" value="1" checked="checked">
+                                            </p>
+                                            <p>宽度：<input id="popwidth" type="text" name="popwidth" value="700" size="4">
+                                                &nbsp;&nbsp; 高度：<input id="popheight" type="text" name="popheight" value="500" size="4">
+                                                &nbsp;&nbsp; 尺寸可变：<input id="resizable" type="checkbox" name="resizable" value="1" checked="checked"> </p>
+                                            <p><input onclick="generateCode()" type="button" name="submit" value="生成代码" size="20" class="calc"> </p>
+                                            <h3>弹出代码</h3>
+                                            <p class="flat">从下面的生成框里复制弹出窗口代码</p>
+                                            <p><textarea id="newText" name="newText" rows="6" cols="36"></textarea></p>
+                                            <p id="example1"></p>
+                                        </form>
+                                    </div>
+                                </div>
+                                <i class="flag_tl_t3"></i>
+                                <i class="flag_tr_t3"></i>
+                                <i class="flag_bl_t3"></i>
+                                <i class="flag_br_t3"></i>
+                            </div>
+                            <div class="intro_area">
+                                <p>经常上网的朋友可能会到过这样一些网站，一进入首页立刻会弹出一个窗口，或者按一个连接或按钮弹出，通常在这个窗口里会显示一些注意事项、版权信息、警告、欢迎光顾之类的话或者作者想要特别提示的信息。其实制作这样的页面效果非常的容易，只要往该页面的HTML里加入几段Javascript代码即可实现。下面俺就带您剖析它的奥秘。</p>
+                                <p>【最基本的弹出窗口代码】</p>
+                                <p>
+                                    其实代码非常简单：</p>
+                                window.open ('page.html')
+                                <p></p>
+                                <p>因为这是一段javascripts代码，所以它们应该放在JAVASCRIPT标签之间。</p>
+                                <p>window.open ('page.html') 用于控制弹出新的窗口page.html，如果page.html不与主窗口在同一路径下，前面应写明路径，绝对路径(http://)和相对路径(../)均可。</p>
+                                <p>用单引号和双引号都可以，只是不要混用。
+                                </p><p>这一段代码可以加入HTML的任意位置，越前越早执行，尤其是页面代码长，又想使页面早点弹出就尽量往前放。</p>
+                            </div>
+
+
+                        </div>
+                        <i class="flag_tl_t1"></i>
+                        <i class="flag_tr_t1"></i>
+                        <i class="flag_bl_t1"></i>
+                        <i class="flag_br_t1"></i>
+                    </div>
+                </div>
+                <div id="col_right" class="col_right">
+
+                    <div class="side_banner">
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div></div>
+</body>
+</head>
+</html>
