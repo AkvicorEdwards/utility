@@ -7,7 +7,7 @@ import (
 )
 
 func myIp(w http.ResponseWriter, r *http.Request) {
-	Fprint(w, ClientIP(r))
+	Fprint(w, strings.Split(ClientIP(r), ":")[0])
 }
 
 // ClientIP 尽最大努力实现获取客户端 IP 的算法。
@@ -30,4 +30,3 @@ func ClientIP(r *http.Request) string {
 
 	return ""
 }
-
