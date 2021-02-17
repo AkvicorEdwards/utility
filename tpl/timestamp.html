@@ -95,7 +95,10 @@
         unix = parseInt(unix)
         if (mode === 1) {
             unix = unix * 1000;
+        } else if(mode === 3) {
+            unix = unix / 1000 / 1000
         }
+
         let date = new Date(unix);
 
         let Y = date.getFullYear() + '-';
@@ -112,8 +115,10 @@
         let unix = new Date(date)
         if (mode === 1) {
             document.getElementById("unix").value = parseInt((unix.getTime()/1000).toString())
-        } else {
+        } else if(mode === 2){
             document.getElementById("unix").value = parseInt((unix.getTime()).toString())
+        } else {
+            document.getElementById("unix").value = parseInt((unix.getTime()*1000*1000).toString())
         }
     }
     function refresh() {
@@ -122,15 +127,22 @@
         if(mode === 1) {
             cur_unix = cur_unix / 1000;
         }
+        if (mode === 3) {
+            cur_unix = cur_unix * 1000 * 1000;
+        }
         document.getElementById("unix").value = parseInt((cur_unix).toString());
         document.getElementById("date").value = cur.getFullYear() + '-' +
             (cur.getMonth()+1 < 10 ? '0'+(cur.getMonth()+1) : cur.getMonth()+1) + '-' +
             cur.getDate() + ' ' + cur.getHours() + ':' + cur.getMinutes() + ':' + cur.getSeconds();
     }
     function change_mode1() {
+
         if(mode === 1) {
             mode = 2;
             document.getElementById("change_mode").innerText = "ms"
+        } else if(mode === 2){
+            mode = 3;
+            document.getElementById("change_mode").innerText = "ns"
         } else {
             mode = 1;
             document.getElementById("change_mode").innerText = "s"
